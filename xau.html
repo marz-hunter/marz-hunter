@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gold Trading Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f9;
+        }
+        .container {
+            max-width: 500px;
+            margin: auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        input, button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .result {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #e9f7e9;
+            border: 1px solid #d4edda;
+            color: #155724;
+            border-radius: 5px;
+        }
+        .error {
+            color: red;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Gold Trading Calculator</h1>
+        <form id="calcForm">
+            <label for="entryPrice">Entry Price (e.g., 2645.000):</label>
+            <input type="number" id="entryPrice" step="0.001" required>
+            
+            <label for="lotSize">Lot Size (e.g., 0.10):</label>
+            <input type="number" id="lotSize" step="0.01" required>
+            
+            <label for="pips">Target Pips (e.g., 30):</label>
+            <input type="number" id="pips" required>
+            
+            <label for="slPips">Stop Loss Pips (e.g., 20):</label>
+            <input type="number" id="slPips" required>
+            
+            <button type="button" onclick="calculate()">Calculate</button>
+        </form>
+
+        <div id="result" class="result" style="display: none;"></div>
+    </div>
+
+    <script>
+        function calculate() {
+            // Get user input
+            const entryPrice = parseFloat(document.getElementById('entryPrice').value);
+            const lotSize = parseFloat(document.getElementById('lotSize').value);
+            const pips = parseFloat(document.getElementById('pips').value);
+            const slPips = parseFloat(document.getElementById('slPips').value);
+
+            if (isNaN(entryPrice) || isNaN(lotSize) || isNaN(pips) || isNaN(slPips)) {
+                alert('Please fill in all fields with valid numbers.');
+                return;
+            }
+
+            // Calculate TP and SL prices
+            const tpPoints = pips * 100; // 1 pip = 100 points
+            const slPoints = slPips * 100;
+
+            const tpPrice = entryPrice + (tpPoints / 1000); // Add points for TP
+            const slPrice = entryPrice - (slPoints / 1000); // Subtract points for SL
+
+            // Calculate profit and loss
+            const profit = (tpPoints * lotSize * 0.01).toFixed(2); // Profit for TP
+            const loss = (slPoints * lotSize * 0.01).toFixed(2);   // Loss for SL
+
+            // Display result
+            const resultDiv = document.getElementById('result');
+            resultDiv.style.display = 'block';
+            resultDiv.innerHTML = `
+                <p><strong>Take Profit Price:</strong> ${tpPrice.toFixed(3)}</p>
+                <p><strong>Stop Loss Price:</strong> ${slPrice.toFixed(3)}</p>
+                <p><strong>Potential Profit:</strong> $${profit}</p>
+                <p><strong>Potential Loss:</strong> $${loss}</p>
+            `;
+        }
+    </script>
+</body>
+</html>
