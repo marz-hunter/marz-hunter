@@ -40,15 +40,6 @@ Here are a few technologies I've been working with recently:
 
 ---
 
-### 🚀 My Projects
-
-*(Catatan: GitHub tidak menampilkan pinned repo Anda saat saya cek. Anda bisa mengganti bagian ini dengan proyek terbaik Anda)*
-
-| Project                                                              | Description                                                                     | Tech Stack                        |
-| -------------------------------------------------------------------- | ------------------------------------------------------------------------------- | --------------------------------- |
-| **[Nama Proyek 1](link-ke-repo)**                                    | Deskripsi singkat tentang proyek ini, apa tujuannya, dan apa yang membuatnya keren. | `JavaScript` `Node.js` `Express`  |
-| **[web-cache-deception-checker](https://github.com/marz-hunter/web-cache-deception-checker)** | A forked tool to check for Web Cache Deception vulnerabilities. [1]             | `Python`                          |
-| **[Nama Proyek 3](link-ke-repo)**                                    | Proyek lain yang menunjukkan keahlian Anda. Mungkin sesuatu yang berbeda.      | `HTML` `CSS` `React`              |
 
 ---
 
@@ -68,9 +59,4 @@ Here are a few technologies I've been working with recently:
 
 <p align="center">
   <a href="https://github.com/marz-hunter"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" /></a>
-   
-  <a href="mailto:emailanda@example.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" /></a>
-   
-  <!-- Tambahkan link sosial media lainnya di sini -->
-  <!-- <a href="https://linkedin.com/in/namaanda"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" /></a> -->
-</p>
+   </p>
