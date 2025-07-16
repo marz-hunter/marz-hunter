@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExN2YyZDNlNGQ0MWM0NmRhMzEwZGU5ZWM5NGE4ZDY3YjU3YzFhNzM1OCZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/IxmG3x1d2J2tW/giphy.gif" width="60" />
+  <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExb3hpOW5sYThwajA5NzJndmtmcnR4eW5rbWlkZW96bnZhbzFqN2pseiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/pOKrXLf9N5g76/giphy.gif" width="60" />
   <h1>
     Hey there, I'm Marzuki!
   </h1>
