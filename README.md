@@ -1,7 +1,7 @@
 <div align="center">
   <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExb3hpOW5sYThwajA5NzJndmtmcnR4eW5rbWlkZW96bnZhbzFqN2pseiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/pOKrXLf9N5g76/giphy.gif" width="60" />
   <h1>
-    Hey there, I'm Marzuki!
+    Hey there, I'm Jack!
   </h1>
 </div>
 
